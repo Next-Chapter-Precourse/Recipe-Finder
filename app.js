@@ -30,7 +30,9 @@ const dummyRecipes = [
       { 1: "do this first..." },
       { 2: "do this second..." },
       { 3: "do this third..." },
-      { 4: "do this fourth..." }
+      { 4: "do this fourth..." },
+      { 5: "do this next..." },
+      { 6: "do this last..." }
     ]
   },
   {
@@ -99,9 +101,10 @@ function displayRecipes(recipes) {
   let displayResults = document.getElementById("results");
   // clear out results from last search:
   displayResults.innerText = "";
+  details.innerText = "";
   console.log(recipes);
   for (let i = 0; i < recipes.length; i++) {
-    displayResults.innerHTML += `<div><a href="javascript:recipeDetails('${recipes[i].recipe}');">${recipes[i].recipe}</a></div>`;;
+    displayResults.innerHTML += `<div><a href="javascript:recipeDetails('${recipes[i].recipe}');">${recipes[i].recipe}</a></div>`;
   }
 }
 
@@ -121,9 +124,26 @@ function displayRecipe(recipe) {
   let details = document.getElementById('details');
   let recipeTitle = `<h2>Recipe:</h2>${recipe.recipe}<br/>`;
   let recipeCookTime = `<h2>Prep and cook time:</h2>${recipe.prepCookTime}<br/>`;
-  let recipeIngreients = `<h2>Ingredients</h2>${recipe.ingredients}<br/>`;
-  let recipeDiretions = `<h2>Ingredients</h2>${recipe.directions}<br/>`;
-  details.innerHTML = `${recipeTitle}${recipeCookTime}${recipeIngreients}${recipeDiretions}  `;
+
+  // get each ingredient from the recipe:
+  let ingredientList = '<ul>';
+  for (let i = 0; i < recipe.ingredients.length; i++) {
+    ingredientList += `<li>${recipe.ingredients[i]}</li>`;
+  }
+  ingredientList += '</ul>';
+  let recipeIngreients = `<h2>Ingredients:</h2>${ingredientList} `;
+  //
+
+  // get each direction from the recipe:
+  let directionList = '<ol>';
+  for (let i = 0; i < recipe.directions.length; i++) {
+    directionList += `<li>${recipe.directions[i][i + 1]}</li>`;
+  }
+  directionList += '</ol>';
+  let recipeDiretions = `<h2>Directions:</h2> ${directionList} <br />`;
+  //
+
+  details.innerHTML = `${recipeTitle}${recipeCookTime}${recipeIngreients}${recipeDiretions} `;
 }
 
 // Task: Write a function to handle errors and display appropriate messages to the user
