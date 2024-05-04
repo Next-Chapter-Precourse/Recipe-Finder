@@ -3,15 +3,43 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header, footer {
+.wrapper {}
+
+header,
+footer {
     text-align: center;
     padding: 10px;
+    background-color: turquoise;
 }
 
-.search-section, .results-section {
+.search-section,
+.results-section {
     width: 90%;
     margin: auto;
 }
 
-/* Task: Extend these styles to improve layout and responsiveness */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+}
 
+img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+/* header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: turquoise;
+    color: black;
+    text-align: center;
+} */
+
+/* Task: Extend these styles to improve layout and responsiveness */
