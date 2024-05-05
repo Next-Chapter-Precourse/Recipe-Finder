@@ -11,7 +11,71 @@ header, footer {
 .search-section, .results-section {
     width: 90%;
     margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+.search-section{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
-/* Task: Extend these styles to improve layout and responsiveness */
+.results-section{
+    margin-top: 2rem;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
 
+.search-input{
+    outline:none;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 1.3rem;
+    text-indent: 3px;
+
+}
+
+.search-btn{
+    height: 34px;
+    border: 1px solid lightgray;
+    background: transparent;
+    border-radius: 4px;
+    cursor:pointer;
+}
+
+.search-btn:hover{
+    background: cyan;
+    transition: all .2s linear;
+}
+
+.recipe {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.recipe h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.recipe ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe li {
+  margin-bottom: 5px;
+}
+
+.recipe p {
+  margin-top: 10px;
+}
+
+
+/* Task: Extend these styles to improve layout and responsiveness */
