@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Finder</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <!-- Task: Create a compelling header for the application -->
-        Recipe Finder
-    </header>
-    <main>
-        <section class="search-section">
-            <!-- Task: Set up the search input and button -->
-        </section>
-        <section id="results" class="results-section">
-            <!-- Recipes will be displayed here by your script -->
-        </section>
-    </main>
-    <footer>
-        <!-- Task: Implement a footer with your name and the year -->
-    </footer>
+    <div class="wrapper">
+
+
+        <header>
+            <!-- Task: Create a compelling header for the application -->
+            Recipe
+            <img src="./images/recipeImage.jpg" alt="recipe image">
+            Finder
+        </header>
+        <main>
+            <section class="search-section">
+                <!-- Task: Set up the search input and button -->
+                <label>Ingredients:
+                    <input type="text" placeholder="ex: eggs ham cheese" id="ingredients" />
+                    <button id="searchBtn">Search</button>
+                </label>
+            </section>
+            <section id="results" class="results-section">
+                <!-- Recipes will be displayed here by your script -->
+            </section>
+            <section id="details" class="details-section">
+                <!-- details will be displayed here by your script -->
+            </section>
+        </main>
+        <footer>
+            <!-- Task: Implement a footer with your name and the year -->
+            <p>Clarissa Lopez 2024</p>
+        </footer>
+    </div>
     <script src="app.js"></script>
 </body>
+
 </html>
