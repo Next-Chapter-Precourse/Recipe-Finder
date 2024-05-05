@@ -101,8 +101,8 @@ function displayRecipes(recipes) {
   let displayResults = document.getElementById("results");
   // clear out results from last search:
   displayResults.innerText = "";
+  // clear out details from last search:
   details.innerText = "";
-  console.log(recipes);
   for (let i = 0; i < recipes.length; i++) {
     displayResults.innerHTML += `<div><a href="javascript:recipeDetails('${recipes[i].recipe}');">${recipes[i].recipe}</a></div>`;
   }
@@ -120,7 +120,6 @@ function recipeDetails(input) {
 }
 
 function displayRecipe(recipe) {
-  console.log(recipe);
   let details = document.getElementById('details');
   let recipeTitle = `<h2>Recipe:</h2>${recipe.recipe}<br/>`;
   let recipeCookTime = `<h2>Prep and cook time:</h2>${recipe.prepCookTime}<br/>`;
