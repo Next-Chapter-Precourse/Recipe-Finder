@@ -1,17 +1,26 @@
 /* Task: Add basic styles for body, header, main, and footer */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header, footer {
+    background-color: #333;
+    color: #fff;
     text-align: center;
     padding: 10px;
 }
 
-.search-section, .results-section {
+.main {
     width: 90%;
     margin: auto;
 }
 
+.search-section, .results-section {
+    margin-bottom: 20px;
+}
+
 /* Task: Extend these styles to improve layout and responsiveness */
+
 
