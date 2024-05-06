@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Fried Chicken",
+        "ingredients": [
+            "chicken",
+            "oil",
+            "flour",
+            "salt",
+            "pepper",
+            "eggs"
+        ],
+        "instructions": {
+            "step one": "step one instructions for fried chicken",
+            "step two": "step two instructions for fried chicken",
+            "step three": "step three instructions for fried chicken"
+        }
+    },
+    {
+        "name": "Chocolate cake",
+        "ingredients": [
+            "chocolate",
+            "sugar",
+            "flour",
+            "salt",
+            "eggs",
+            "butter"
+        ],
+        "instructions": {
+            "step one": "step one instructions for Chocolate cake",
+            "step two": "step two instructions for Chocolate cake",
+            "step three": "step three instructions for Chocolate cake"
+        }
+    },
+    {
+        "name": "Asparagus",
+        "ingredients": [
+            "asparagus",
+            "oil",
+            "salt",
+            "pepper"
+        ],
+        "instructions": {
+            "step one": "step one instructions for aspargus",
+            "step two": "step two instructions for aspargus",
+            "step three": "step three instructions for aspargus"
+        }
+    },
+    {
+        "name": "Flourless chocolate cake",
+        "ingredients": [
+            "chocolate",
+            "eggs",
+            "butter",
+            "salt"
+        ],
+        "instructions": {
+            "step one": "step one instructions for flourless chocolate cake",
+            "step two": "step two instructions for flourless chocolate cake",
+            "step three": "step three instructions for flourless chocolate cake"
+        }
+    },
+    {
+        "name": "Salmon",
+        "ingredients": [
+            "salmon",
+            "oil",
+            "salt",
+            "pepper"
+        ],
+        "instructions": {
+            "step one": "step one instructions for salmon",
+            "step two": "step two instructions for salmon",
+            "step three": "step three instructions for salmon"
+        }
+    },
+    {
+        "name": "Pesto Pizza",
+        "ingredients": [
+            "flour",
+            "honey",
+            "yeast",
+            "salt",
+            "petso",
+            "mushrooms",
+            "oil", 
+            "water"
+        ],
+        "instructions": {
+            "step one": "step one instructions for pesto pizza",
+            "step two": "step two instructions for pesto pizza",
+            "step three": "step three instructions for pesto pizza"
+        }
+    },
+    {
+        "name": "Mushroom Omelet",
+        "ingredients": [
+            "eggs",
+            "butter",
+            "mushrooms"
+        ],
+        "instructions": {
+            "step one": "step one instructions for omelet",
+            "step two": "step two instructions for omelet",
+            "step three": "step three instructions for omelet"
+        }
+    }
+]

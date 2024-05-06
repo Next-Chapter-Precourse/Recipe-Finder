@@ -4,23 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe Finder</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='styles/main.css'>
+    <script type="module" src='scripts/index.js' defer></script>
 </head>
 <body>
     <header>
-        <!-- Task: Create a compelling header for the application -->
         Recipe Finder
     </header>
     <main>
-        <section class="search-section">
-            <!-- Task: Set up the search input and button -->
+        <section class="form-container">
+            <form id="searchForm">
+                <div class="form-group">
+                  <label for="name">Enter ingredients:</label>
+                  <input type="text" id="ingredients" name="ingredients" placeholder="example: 'eggs flour water'">
+                </div>
+                <button class="form-submit-btn" type="submit">Submit</button>
+              </form>
         </section>
-        <section id="results" class="results-section">
-            <!-- Recipes will be displayed here by your script -->
+        <section id="results">
         </section>
+        <section id="recipe-card" class = 'recipe-card-section'></section>
     </main>
     <footer>
-        <!-- Task: Implement a footer with your name and the year -->
+      <div>Linda Woo 2024</div>
     </footer>
     <script src="app.js"></script>
 </body>
