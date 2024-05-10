@@ -1,4 +1,5 @@
 // Task: Define an array of dummy recipes with minimal data
+//
 const dummyRecipes = [
   {
     recipe: "Tacos",
